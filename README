@@ -1,0 +1,39 @@
+====================================
+ GifBooth README
+====================================
+
+
+Software requirements
+--------------------------------------------
+ - git-core			# downloading/updating GifBooth
+ - gphoto2			# camera tethering software
+ - eom				# image viewer
+ - mpv				# video player
+ - awk				# find eventid for keyboard button
+ - sed				# find eventid for keyboard button
+ - xmodmap			# remap keyboard button
+ - thd				# run script when pressing keyboard button
+ - ffmpeg			# video conversion
+
+Install requirements on Debian/Ubuntu
+--------------------------------------------
+sudo apt-get install git-core gphoto2 eom mpv awk sed xmodmap thd ffmpeg
+
+
+Getting a working copy
+--------------------------------------------
+ - git clone https://github.com/theboothbrothers/GifBooth.git
+
+
+Cleaning the working copy
+--------------------------------------------
+ 1) remove any new files you added (config files and images are ignored)
+	git clean -df
+
+ 2) undo any changes you might have done to the source code
+	git checkout origin/master -- .
+
+
+Updating the working copy
+--------------------------------------------
+ - git pull origin master
